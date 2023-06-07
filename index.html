@@ -6,13 +6,13 @@
 <head>
   <script>
     const config = {
-      title: 'Bucket Browser', // prefix value with `HTML> ` to render as html, see subtitle
-      subtitle: 'HTML>made with ♥ by <b><a href="https://qoo.monster">qoomon</a></b>', // prefix value with `HTML> ` to render as html
-      logo: 'https://qoomon.github.io/aws-s3-bucket-browser/logo.png',
-      favicon: 'https://qoomon.github.io/aws-s3-bucket-browser/favicon.ico',
+      title: 'Public Data Thinking Datasets', // prefix value with `HTML> ` to render as html, see subtitle
+      subtitle: 'HTML>made with ♥ by made with ♥ by One Fact Foundation; email hello@onefact.org. The data thinking materials are at <b><a href="https://datathinking.org">datathinking.org</a></b>.', // prefix value with `HTML> ` to render as html
+      logo: 'https://www.onefact.org/images/share.png',
+      favicon: 'https://www.onefact.org/favicon.ico',
       primaryColor: '#167df0',
 
-      bucketUrl: undefined,
+      bucketUrl: 'https://s3-external-1.amazonaws.com/datathinking.org/',
       // If bucketUrl is undefined, this script tries to determine bucket Rest API URL from this file location itself.
       //   This will only work for locations like these
       //   * https://s3.BUCKET-REGION.amazonaws.com/BUCKET-NAME/index.html
@@ -27,7 +27,7 @@
       keyExcludePatterns: [/^index\.html$/, /^Urban_3D_Challenge\//], // matches againt object key relative to rootPrefix
       pageSize: 50,
 
-      bucketMaskUrl: undefined,
+      bucketMaskUrl: 'https://public.datathinking.org',
       // If bucketMaskUrl is set, file urls will be changed from ${bucketUrl}/${file} to ${bucketMaskUrl}/${file}
       //   bucketMaskUrl: 'https://example.org'
       //     => https://example.org/foo/bar.txt
